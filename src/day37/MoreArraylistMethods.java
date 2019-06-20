@@ -1,0 +1,112 @@
+package day37;
+
+import java.util.ArrayList;
+
+public class MoreArraylistMethods {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> numlst = new ArrayList<>();
+		
+		numlst.add(100);
+		numlst.add(200);
+		numlst.add(300);
+		numlst.add(400);
+		
+		System.out.println( numlst);
+		
+		// if you try to access index does not exist
+		// indexoutofbound exception
+		//System.out.println(numlst.get(7));
+		
+		// inserting items at certain location
+		
+		// insert 500 as second item
+		
+		// when insetting a value , the index shift to next location
+		// add (index , value)
+		numlst.add(1, 500);
+		System.out.println( numlst );
+		
+		// it should be within range or exception occur
+		// numlst.add(10, 500) ;
+		
+		
+		// Updating a value inside ArrayList item
+		// set(index, newValue )
+		numlst.set(2, 1000);
+		System.out.println(numlst);
+		
+		
+		// deleting everything from the list
+		// numlst.clear();
+		// System.out.println( numlst );
+		
+		// checking whether an item exist in the list
+		// contain(item) ---> return boolean
+		
+		System.out.println( numlst.contains(1000));
+		System.out.println(numlst.contains(3000));
+		
+		// finding out location of item
+		
+		int indexOf1000 = numlst.indexOf(1000);
+		System.out.println(" index of 1000 " + indexOf1000 );
+		
+		
+		boolean isitEmptyOrNot = numlst.isEmpty();
+		System.out.println(" isitEmptyOrNot " + isitEmptyOrNot );
+		
+		// counting items
+		System.out.println(" size of list " + numlst.size() );
+		
+		// removing items from arrayList
+				// remove(ItemValue) 
+				// remove(Index)
+				
+		
+		numlst.remove(1) ;
+		System.out.println(numlst);
+		
+		// numlst.remove(300); this is calling remove(index) and we don't have index 300
+		
+		
+		// numlst.remove( new Integer(300) );
+		numlst.remove(Integer.valueOf(300)) ;
+		System.out.println( numlst);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
